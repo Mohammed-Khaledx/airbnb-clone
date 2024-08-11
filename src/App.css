@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.Header {
+  height: 80px;
+  box-shadow: 0px 2.9856px 7.45px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header img {
+  height: 80px;
+  width: 140px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  padding: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Gallery .container {
   display: flex;
   flex-direction: column;
+}
+.Gallery img {
+  /* width: 350px; */
+  max-width: 90%;
+  margin: 20px auto;
+}
+.Gallery h1 {
+  margin: 0;
+}
+
+.Gallery p {
+  color: #777;
+  line-height: 1.6;
+}
+
+.Card {
+  margin: 15px;
+  min-width: 175px;
+  max-width: 300px;
+  /* height: 100px; */
+}
+
+.Card .img-container {
+  position: relative;
+}
+.Card .img-container img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.Card .img-container span {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.Card .rating {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  /* padding: 5px 0; */
 }
 
-.App-link {
-  color: #61dafb;
+.Card .rating img {
+  display: inline;
+  margin-right: 5px;
+
+  /* width: 20px; */
+  /* height: 20px; */
+  /* margin-top: auto; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card .rating p {
+  display: inline;
+  font-weight: bold;
+}
+.Card .rating span {
+  font-weight: normal;
+  color: #777;
+  letter-spacing: 3px;
+}
+
+.Card p {
+  margin: 0;
+  padding: 5px 0;
+}
+.Card .price {
+  font-weight: bold;
+}
+
+.cards .container {
+  height: fit-content;
+  display: flex;
+
+  justify-content: left;
+  overflow-x: auto;
 }

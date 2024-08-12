@@ -7,7 +7,6 @@ import "./App.css";
 
 function App() {
   
-  console.log(Data);
   let CardsData = Data.map((item) => {
     return (
       <Card

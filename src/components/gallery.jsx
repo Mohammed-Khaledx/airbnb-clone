@@ -1,5 +1,5 @@
 import "../App.css";
-import group from "../images/Group 77.png";
+import group from "../images/Group 77a.png";
 function Gallery() {
   return (
     <div className="Gallery">
